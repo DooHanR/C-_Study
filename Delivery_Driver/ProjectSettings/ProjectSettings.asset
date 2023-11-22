@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 8ec2c45999b5447478c98e8f62b984de
+  productGUID: d40f544929c26644795f5654800647aa
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: git_test
+  productName: Delivery_Driver
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -626,14 +626,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: git_test
+  metroPackageName: Delivery_Driver
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: git_test
+  metroApplicationDescription: Delivery_Driver
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -701,10 +701,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 09b20e46-a5fe-487b-8e5a-93db41494150
+  cloudProjectId: bea3cd60-ba62-4781-a92e-b98a1a787b78
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: git_test
+  projectName: Delivery_Driver
   organizationId: dat_kku
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
