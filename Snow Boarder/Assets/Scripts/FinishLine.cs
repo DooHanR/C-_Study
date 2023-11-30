@@ -5,13 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
+    [SerializeField] float delayTime = 0.5f;
+    [SerializeField] ParticleSystem finishEffect;
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player") 
         {
-            SceneManager.LoadScene(0);
-            Debug.Log("Shutup!");
+            Invoke("ReloadScene", delayTime);
+            finishEffect.Play();
+            Debug.Log("Crashed");
         }
+    }
+
+    void ReloadScene() {
+        SceneManager.LoadScene(0);
     }
 }    
     
