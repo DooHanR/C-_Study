@@ -7,17 +7,16 @@ public class CrashDetector : MonoBehaviour
 {
     [SerializeField] float delayTime = 0.5f;
     [SerializeField] ParticleSystem crashEffect;
-    // Start is called before the first frame update
-    // void OnCollisionEnter2D(Collision2D other) {
-    //     Debug.Log("Boom!");
-    // }
-
+    [SerializeField] AudioClip crashSFX;
+    // [SerializeField] AudioClip jumpSFX;
+    // [SerializeField] AudioClip landSFX;
     void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Ground") 
         {
-            Invoke("ReloadScene", delayTime);
             crashEffect.Play();
             Debug.Log("You dead!");
+            GetComponent<AudioSource>().PlayOneShot(crashSFX);
+            Invoke("ReloadScene", delayTime);
         }
     }
 

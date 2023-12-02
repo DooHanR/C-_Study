@@ -7,13 +7,16 @@ public class FinishLine : MonoBehaviour
 {
     [SerializeField] float delayTime = 0.5f;
     [SerializeField] ParticleSystem finishEffect;
+
+    AudioClip finish ;
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player") 
         {
-            Invoke("ReloadScene", delayTime);
             finishEffect.Play();
             Debug.Log("Crashed");
+            GetComponent<AudioSource>().Play();
+            Invoke("ReloadScene", delayTime);
         }
     }
 
